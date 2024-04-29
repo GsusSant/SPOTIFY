@@ -1,0 +1,3 @@
+requirements.txt
+
+joblib==<versión>
