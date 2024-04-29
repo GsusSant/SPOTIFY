@@ -19,7 +19,7 @@ import joblib
 # # --------------------CARGA DATOS----------------------------#
 # df= load_data()
 
-modelo_file = 'modelo_lgb.pkl'
+modelo_file = 'modelos\modelo_lgb.pkl'
 loaded_model = joblib.load(modelo_file)
 # ---------------------------------
 # with open('modeloforest.pkl', 'rb') as pickle_in:
@@ -49,7 +49,7 @@ loaded_model = joblib.load(modelo_file)
 # elif seleccion == "Predicción":
     # st.title("¡Vamos a predecir la danceability de la canción!")
     
-st.sidebar.image("Spotify_logo_with_text.svg.png", use_column_width=True)
+st.sidebar.image("img\Spotify_logo_with_text.svg.png", use_column_width=True)
 
 # Seleccionar una opción desde la barra lateral
 seleccion = st.sidebar.selectbox("Selecciona una opción", ["Predicción"])
